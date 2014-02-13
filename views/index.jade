@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  script(src="/socket.io/socket.io.js")          
+  script(src='/javascripts/paper.js') 
+  canvas(id="myCanvas", height="450", width="600", style="border:2px solid #000000; margin-top:50px; margin-left:50px")
+  script(type='text/paperscript', src='/javascripts/draw.js', canvas="myCanvas") 
+  
+     
